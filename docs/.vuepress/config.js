@@ -3,6 +3,10 @@ module.exports = {
     title: '博客',
     description: 'Vuepress blog demo',
 
+    head: [
+        ['link', { rel: 'icon', href: '/logo.png' }]
+    ],
+
     themeConfig: {
         // 你的GitHub仓库，请正确填写
         repo: 'https://github.com/lxr17',
@@ -12,7 +16,7 @@ module.exports = {
 
         // 导航栏
         nav: [
-            {text: '首页', link: '/vuepress-blog/'},
+            {text: '首页', link: '/'},
             {text: '第一篇博客', link: '/blog/FirstBlog.md'}
         ],
 
