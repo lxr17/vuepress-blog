@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/',
+    base: '/vuepress-blog/',
     title: '博客',
     description: 'Vuepress blog demo',
 
@@ -12,7 +12,7 @@ module.exports = {
 
         // 导航栏
         nav: [
-            {text: '首页', link: '/'},
+            {text: '首页', link: '/vuepress-blog/'},
             {text: '第一篇博客', link: '/blog/FirstBlog.md'}
         ],
 
