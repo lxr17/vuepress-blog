@@ -13,7 +13,7 @@ before_install:
 install:
   - yarn
 script:
-  - yarn blog:build
+  - yarn docs:build
 deploy:
   provider: pages
   skip-cleanup: true
