@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/vuepress-blog/',
+    base: '/',
 
     // 标题
     title: '懒星人的主页',
