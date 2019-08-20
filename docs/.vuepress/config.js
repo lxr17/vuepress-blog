@@ -2,10 +2,10 @@ module.exports = {
     base: '/vuepress-blog/',
 
     // 标题
-    title: '懒星人的学习笔记',
+    title: '懒星人的主页',
 
     // 描述
-    description: '欢迎访问我的学习笔记',
+    description: '欢迎访问我的主页',
 
     // markdown显示行号
     markdown: {
@@ -29,15 +29,17 @@ module.exports = {
 
         // 导航栏
         nav: [
-            {text: '积累', link: '/blog/'},
-            {text: '学习', link: '/blog/study.md'},
-            {text: '关于', link: '/blog/about.md'}
+            {text: '博客', link: '/blog/'},
+            {text: 'ARTS总结', link: '/arts/'},
+            {text: '碎碎念', link: '/thought/'},
+            {text: '关于', link: '/about'}
         ],
 
         // 侧边栏
-        sidebar: [
-            ['/blog/FirstBlog.md', '我的第一篇博客'],
-            ['/blog/Blog2.md', '我的第二篇博客']
-        ]
+        sidebar: {
+            '/blog/': require('../blog/sidebar'),
+            '/arts/': require('../arts/sidebar'),
+            '/thought/': require('../thought/sidebar')
+        }
     }
 }
