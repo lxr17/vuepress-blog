@@ -1,23 +1,37 @@
 module.exports = {
     base: '/vuepress-blog/',
-    title: '博客',
-    description: 'Vuepress blog demo',
 
+    // 标题
+    title: '懒星人的学习笔记',
+
+    // 描述
+    description: '欢迎访问我的学习笔记',
+
+    // markdown显示行号
+    markdown: {
+        lineNumbers: true
+    },
+
+    // 自定义favicon
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
 
     themeConfig: {
         // 你的GitHub仓库，请正确填写
-        repo: 'https://github.com/lxr17',
+        repo: 'lxr17',
 
         // 自定义仓库链接文字。
         repoLabel: 'GitHub',
 
+        // 最后更新时间
+        lastUpdated: '更新时间',
+
         // 导航栏
         nav: [
-            {text: '首页', link: '/'},
-            {text: '第一篇博客', link: '/blog/FirstBlog.md'}
+            {text: '积累', link: '/blog/'},
+            {text: '学习', link: '/blog/study.md'},
+            {text: '关于', link: '/blog/about.md'}
         ],
 
         // 侧边栏

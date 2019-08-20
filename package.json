@@ -1,15 +1,14 @@
 {
-  "name": "vuepress-blog",
+  "name": "lanxingren-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "我的学习笔记",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "lanxingren",
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.0.3"
