@@ -5,4 +5,4 @@
 
 记录工作中遇到的问题，平时看书的总结，以及一些个人思考。
 
-访问地址：[blog.lanxingren.name](https://blog.lanxingren.name/)
+访问地址：[www.lanxingren.name](https://www.lanxingren.name/)
