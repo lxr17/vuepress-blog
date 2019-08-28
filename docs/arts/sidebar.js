@@ -2,8 +2,8 @@ module.exports = [
     {
         title: 'ARTS总结',
         collapsable: false,
-        sidebarDepth: 2,
+        sidebarDepth: 3,
 
-        children: []
+        children: ['/arts/arts1', '/arts/arts2', '/arts/arts3']
     }
 ]

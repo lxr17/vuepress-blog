@@ -4,6 +4,6 @@ module.exports = [
         collapsable: false,
         sidebarDepth: 2,
 
-        children: ['/blog/FirstBlog', '/blog/Blog2']
+        children: []
     }
 ]
