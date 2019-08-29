@@ -27,6 +27,16 @@ module.exports = {
         // 最后更新时间
         lastUpdated: '更新时间',
 
+        // 刷新弹窗
+        serviceWorker: {
+            updatePopup: true,// Boolean | Object, 默认值是 undefined.
+            // 如果设置为 true, 默认的文本配置将是:
+            updatePopup: {
+                message: "有新内容",
+                buttonText: "刷新"
+            }
+        },
+
         // 导航栏
         nav: [
             {text: '博客', link: '/blog/'},
