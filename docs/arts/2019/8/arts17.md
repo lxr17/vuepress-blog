@@ -1,7 +1,33 @@
 # 第十七周ARTS总结
 ## Algorithm
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+> 2ms | 60.63% Run time  
+> 34.4MB | 100.00% Memory
+```java
+public boolean isValid(String s) {
+    // 利用栈的特性
+    Stack<Character> stack = new Stack<>();
 
+    if (s == null || s.length() == 0) {
+        return true;
+    }
+
+    // 注意判空
+    for (Character ch : s.toCharArray()) {
+        if (!stack.empty() && ')' == ch && '(' == stack.peek()) {
+            stack.pop();
+        } else if (!stack.empty() && ']' == ch && '[' == stack.peek()) {
+            stack.pop();
+        } else if (!stack.empty() && '}' == ch && '{' == stack.peek()) {
+            stack.pop();
+        } else {
+            stack.push(ch);
+        }
+    }
+
+    return stack.empty();
+}
+```
 ## Review
 - [Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion](https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd#.egywqatjg)
 
