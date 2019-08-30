@@ -1,6 +1,85 @@
 # 第十五周ARTS总结
 ## Algorithm
 - [4Sum](https://leetcode.com/problems/4sum/)
+> 288ms | 5.02% Run time  
+> 58.4MB | 8.69% Memory
+```java
+public List<List<Integer>> fourSum(int[] nums, int target) {
+    // 排序
+    Arrays.sort(nums);
+
+    List<Integer> numsList = new ArrayList<>();
+    for (int num : nums) {
+        numsList.add(num);
+    }
+
+    return findX(numsList, 4, target);
+}
+
+/**
+ * 从source中找出size个数，使之和为sum，并返回所有的序列（不重复）
+ *
+ * @param source 序列
+ * @param size   个数
+ * @param sum    总和
+ */
+public List<List<Integer>> findX(List<Integer> source, int size, int sum) {
+    List<List<Integer>> list = new ArrayList<>();
+
+    // 用二分法找到所需要的值
+    if (size == 1) {
+        int leftIndex = 0;
+        int rightIndex = source.size() - 1;
+        while (rightIndex - leftIndex > 1) {
+            int middleIndex = (leftIndex + rightIndex) / 2;
+
+            if (sum < source.get(middleIndex)) {
+                rightIndex = middleIndex;
+            } else if (sum > source.get(middleIndex)) {
+                leftIndex = middleIndex;
+            } else {
+                List<Integer> ans = new ArrayList<>();
+                ans.add(sum);
+                list.add(ans);
+                break;
+            }
+        }
+
+        // rightIndex - leftIndex == 1 的情况
+        if (list.size() == 0) {
+            if (sum == source.get(leftIndex) || sum == source.get(rightIndex)) {
+                List<Integer> ans = new ArrayList<>();
+                ans.add(sum);
+                list.add(ans);
+            }
+        }
+
+        return list;
+    }
+
+    for (int i = 0; i < source.size() - size + 1; i++) {
+        // 力求不重复
+        if (i > 0 && source.get(i).equals(source.get(i - 1))) {
+            continue;
+        }
+
+        int thisNum = source.get(i);
+
+        // 获取剩余部分的序列
+        List<List<Integer>> tempList = findX(source.subList(i + 1, source.size()), size - 1, sum - thisNum);
+
+        // 拼上第一个数
+        for (List<Integer> temp : tempList) {
+            temp.add(0, thisNum);
+            list.add(temp);
+        }
+    }
+
+    return list;
+
+}
+```
+**给`XSum`类型的题给了一种通用的解法，其中`X`为任意整数**
 
 ## Review
 - [Improving build speed in Android Studio](https://medium.com/androiddevelopers/improving-build-speed-in-android-studio-3e1425274837)
