@@ -1,6 +1,8 @@
 # 第一周ARTS总结
 ## Algorithm
 - [Two Sum](https://leetcode.com/problems/two-sum/)
+> 2ms | 99.85% Run time  
+> 38.1MB | 88.71% Memory
 ```java
 public int[] twoSum(int[] nums, int target) {
     // 将int编程long，保存index信息
@@ -28,10 +30,12 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 ----
+
 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+> 2ms | 98.83% Run time  
+> 46.8MB | 51.70% Memory
 ```java
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
     // first position
     int first = l1.val + l2.val;
     // ten position
@@ -77,6 +81,8 @@ static class ListNode {
 ```
 ----
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+> 65ms | 18.94% Run time  
+> 39.8MB | 16.26% Memory
 ```java
 public int lengthOfLongestSubstring(String s) {
     int max = 0;

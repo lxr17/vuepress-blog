@@ -1,6 +1,8 @@
 # 第二周ARTS总结
 ## Algorithm
 - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+> 2ms | 100.00% Run time  
+> 47.7MB | 90.79% Memory
 ```java
 public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     int m = nums1.length;

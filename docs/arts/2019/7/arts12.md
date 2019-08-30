@@ -1,6 +1,8 @@
 # 第十二周ARTS总结
 ## Algorithm
 - [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+> 1ms | 73.74% Run time  
+> 37.7MB | 83.49% Memory
 ```java
 public String longestCommonPrefix(String[] strs) {
     if (strs.length == 0) {

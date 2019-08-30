@@ -1,6 +1,8 @@
 # 第八周ARTS总结
 ## Algorithm
 - [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+> 61ms | 14.81% Run time  
+> 41.2MB | 23.09% Memory
 ```java
 public boolean isMatch(String s, String p) {
     if (p.isEmpty()) {
@@ -18,6 +20,7 @@ public boolean isMatch(String s, String p) {
     }
 }
 ```
+**注：该题参考了solution的解法**
 
 ## Review
 - [Get Xposed](https://www.xda-developers.com/xposed-framework-hub/)
@@ -33,7 +36,7 @@ public static void main(String[] args) {
     System.out.println(o2);
 }
 ```
-的输出结果是  
+的输出结果是 
 >1.0  
 >1
 

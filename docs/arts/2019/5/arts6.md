@@ -1,6 +1,8 @@
 # 第六周ARTS总结
 ## Algorithm
 - [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+> 3ms | 62.44% Run time  
+> 35.3MB | 99.97% Memory
 ```java
 public int myAtoi(String str) {
     // empty

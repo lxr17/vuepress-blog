@@ -1,6 +1,8 @@
 # 第七周ARTS总结
 ## Algorithm
 - [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+> 8ms | 68.82% Run time  
+> 35.1MB | 71.77% Memory
 ```java
 public boolean isPalindrome(int x) {
     boolean isPalindrome = true;

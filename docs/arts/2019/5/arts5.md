@@ -1,6 +1,8 @@
 # 第五周ARTS总结
 ## Algorithm
 - [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+> 2ms | 71.16% Run time  
+> 32.9MB | 100.00% Memory
 ```java
 public int reverse(int x) {
     try {

@@ -1,6 +1,8 @@
 # 第四周ARTS总结
 ## Algorithm
 - [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+> 27ms | 31.14% Run time  
+> 43.8MB | 5.02% Memory
 ```java
 public String convert(String s, int numRows) {
     if (numRows == 1) {

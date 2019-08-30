@@ -1,6 +1,8 @@
 # 第十四周ARTS总结
 ## Algorithm
 - [3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+> 9ms | 13.77% Run time  
+> 36.3MB | 100.00% Memory
 ```java
 public int threeSumClosest(int[] nums, int target) {
     // 排序
@@ -64,6 +66,60 @@ public int threeSumClosest(int[] nums, int target) {
 }
 ```
 - [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+> 1ms | 64.55% Run time  
+> 36.2MB | 98.63% Memory
+```java
+private static Map<Character, List<Character>> match = new HashMap<>();
+
+static {
+    match.put('2', Arrays.asList(new Character[]{'a', 'b', 'c'}));
+    match.put('3', Arrays.asList(new Character[]{'d', 'e', 'f'}));
+    match.put('4', Arrays.asList(new Character[]{'g', 'h', 'i'}));
+    match.put('5', Arrays.asList(new Character[]{'j', 'k', 'l'}));
+    match.put('6', Arrays.asList(new Character[]{'m', 'n', 'o'}));
+    match.put('7', Arrays.asList(new Character[]{'p', 'q', 'r', 's'}));
+    match.put('8', Arrays.asList(new Character[]{'t', 'u', 'v'}));
+    match.put('9', Arrays.asList(new Character[]{'w', 'x', 'y', 'z'}));
+}
+
+public List<String> letterCombinations(String digits) {
+    List<String> ans = new ArrayList<>();
+
+    List<StringBuilder> list = getSubString(digits);
+    for (StringBuilder sb : list) {
+        ans.add(sb.toString());
+    }
+
+    return ans;
+}
+
+public List<StringBuilder> getSubString(String digits) {
+    List<StringBuilder> list = new ArrayList<>();
+
+    if (digits == null || digits.length() == 0) {
+        return list;
+    }
+
+    char[] chars = digits.toCharArray();
+
+    if (chars.length == 1) {
+        for (char ch : match.get(chars[0])) {
+            list.add(new StringBuilder().append(ch));
+        }
+
+    } else {
+        // 获取索引1及以后的所有子串
+        List<StringBuilder> subList = getSubString(digits.substring(1));
+        for (char ch : match.get(chars[0])) {
+            for (StringBuilder sb : subList) {
+                list.add(new StringBuilder(sb).insert(0, ch));
+            }
+        }
+    }
+
+    return list;
+}
+```
 
 ## Review
 - [The Scariest Thing About DeepNude Wasn’t the Software](https://onezero.medium.com/the-scariest-thing-about-deepnude-wasnt-the-software-a8df4e7f239b)

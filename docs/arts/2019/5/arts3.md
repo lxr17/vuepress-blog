@@ -1,6 +1,8 @@
 # 第三周ARTS总结
 ## Algorithm
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+> 43ms | 40.90% Run time  
+> 38.3MB | 49.35% Memory
 ```java
 public String longestPalindrome(String s) {
     if (s.length() == 0) {
