@@ -2,6 +2,6 @@ module.exports = [
     {
         title: '碎碎念',
 
-        children: []
+        children: ['excerpt1']
     }
 ]
