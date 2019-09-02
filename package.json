@@ -7,7 +7,11 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "keywords": [],
+  "keywords": [
+    "懒星人",
+    "lanxingren",
+    "懒星人的主页"
+  ],
   "author": "lanxingren",
   "license": "ISC",
   "devDependencies": {
