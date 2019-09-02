@@ -17,6 +17,9 @@ module.exports = {
         ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
 
+    // 设置ga
+    ga: "UA-146806630-1",
+
     themeConfig: {
         // 你的GitHub仓库，请正确填写
         repo: 'lxr17/vuepress-blog',
