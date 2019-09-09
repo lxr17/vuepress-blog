@@ -21,7 +21,9 @@ module.exports = {
     plugins: [
         ['@vuepress/google-analytics', {
             ga: 'UA-146806630-1'
-        }]
+        }],
+        ['@vuepress/back-to-top'],
+        ['@vuepress/medium-zoom']
     ],
 
     themeConfig: {
