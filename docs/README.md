@@ -11,5 +11,5 @@ features:
 - title: 碎碎念
   details: 偶尔说一些自认为深刻的话。
   
-footer: MIT Licensed | Copyright © 2018-present lanxingren
+footer: MIT Licensed | Copyright © 2019-present lanxingren
 ---
