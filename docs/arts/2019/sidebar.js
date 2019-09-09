@@ -54,6 +54,7 @@ module.exports = [
         children: [
             './2019/9/arts20',
             './2019/9/arts21',
+            './2019/9/arts22',
         ]
     },
 ]

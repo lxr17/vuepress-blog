@@ -18,7 +18,11 @@ module.exports = {
     ],
 
     // 设置ga
-    ga: "UA-146806630-1",
+    plugins: [
+        ['@vuepress/google-analytics', {
+            ga: 'UA-146806630-1'
+        }]
+    ],
 
     themeConfig: {
         // 你的GitHub仓库，请正确填写
