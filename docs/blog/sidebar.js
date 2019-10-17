@@ -2,6 +2,8 @@ module.exports = [
     {
         title: '博客',
 
-        children: []
+        children: [
+            'minesweeper-game-with-custom-view.md',
+        ]
     }
 ]
