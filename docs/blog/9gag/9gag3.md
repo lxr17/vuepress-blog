@@ -89,6 +89,7 @@ public class NewsBean {
 ```
 该类是段子类的一个`bean`类，各个属性代表的意思在代码里已经说清楚了。
 
+----
 ### DatabaseUtil.java
 ```java
 package com.lanxingren.util;
@@ -158,6 +159,7 @@ public class DatabaseUtil {
 
 而且，最新的`MySQL`其实并不需要通过`Class.forName`来加载驱动了。
 
+----
 ### NewsDAO.java
 ```java
 package com.lanxingren.dao;
@@ -234,6 +236,7 @@ public class NewsDAO {
 
 其中`sql`用了倒序是为了让段子按照时间流的顺序在前台展示。
 
+----
 ### QueryNewsServlet.java
 ```java
 package com.lanxingren.servlet;
@@ -304,8 +307,7 @@ public class QueryNewsServlet extends HttpServlet {
 
 通过以上的方式，就完成了后台查询段子接口的开发，并且可通过`page`参数来获取第`page`页的信息，接口URL为：`http://localhost:8080/Imitating9GAG/QueryNewsServlet?page=2`
 
-接着，将项目在`Tomcat`下启动后台服务器就正式搭建完成了，通过该`URL`获取的数据见下图：
-![](https://pic.superbed.cn/item/5da81695451253d178ebde62.png)
+接着，将项目在`Tomcat`下启动后台服务器就正式搭建完成了。
 
 ## 前台获取数据并展示
 ```java

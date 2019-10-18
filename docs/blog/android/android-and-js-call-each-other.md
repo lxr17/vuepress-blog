@@ -7,7 +7,7 @@
 
 ## 效果
 其中“调用安卓方法”按钮是`html`中的按钮；“调用JS方法”按钮是app中的按钮。
-![](https://pic.superbed.cn/item/5da8251e451253d178ed642d.gif)
+![](https://images2018.cnblogs.com/blog/1410837/201809/1410837-20180907111147911-1977242445.gif)
 
 ## 本地HTML
 首先，在app根目录新建一个`assets`文件夹，并在文件夹内新建一个本地`html`文件，如下图

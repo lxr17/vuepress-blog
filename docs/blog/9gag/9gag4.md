@@ -398,8 +398,8 @@ private void initLoadMoreListener() {
 通过以上的过程就可以实现上拉加载的效果。
 
 ## 参考
-[SwipeRefreshLayout详解和自定义上拉加载更多](https://www.jianshu.com/p/d23b42b6360b)  
-[wipeRefreshLayout + RecyclerView 实现 上拉刷新 和 下拉刷新](https://www.cnblogs.com/liunanjava/p/5860024.html)
++ [SwipeRefreshLayout详解和自定义上拉加载更多](https://www.jianshu.com/p/d23b42b6360b)  
++ [wipeRefreshLayout + RecyclerView 实现 上拉刷新 和 下拉刷新](https://www.cnblogs.com/liunanjava/p/5860024.html)
 
 ## 结束语
 本次学习了`Android`的下拉刷新以及上拉加载的实现，对`RecyclerView`有了进一步的了解。
