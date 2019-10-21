@@ -1,7 +1,7 @@
 # 微信分享大图遇到的问题
 ## 起因
 要做一个微信图片分享的功能，但是对于大图会如下问题：
-![](https://pic.superbed.cn/item/5da83110451253d178f16601.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/9-1.png)
 当时没有仔细查看错误日志，单纯的以为是图片太大的问题。
 
 ## 分享图片代码
@@ -29,7 +29,7 @@ public void WXsharePic(String transaction, final boolean isSession, Bitmap bitma
 ## 解决过程
 ### ~~想法一~~
 查看微信的文档，发现如下信息：
-![](https://pic.superbed.cn/item/5da83110451253d178f16603.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/9-2.png)
 初步判定是略缩图过大导致的，准备对略缩图进一步压缩。
 
 但是在调试过程中发现略缩图并没有超过32K，于是<span style="color: #ff0000;">这种想法不正确</span>。

@@ -1,7 +1,7 @@
 # 一种动态写入apk数据的方法（用于用户关系绑定、添加渠道号等）
 ## 背景
 正在开发的APP需要记录业务员与客户的绑定关系。具体应用场景如下：
-![](https://pic.superbed.cn/item/5da95814451253d1782a94a2.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/13-1.png)
 
 由流程图可知，并没有用户填写业务人员信息这一步，因此在用户下载的APP中就已经携带了业务人员的信息。
 
@@ -12,12 +12,12 @@
 
 如果我们能够正确修改该区域，就可以在不破坏压缩包、不重新打包的前提下快速给`apk`文件写入自己想要的数据。
 
-![](https://pic.superbed.cn/item/5da95814451253d1782a94a7.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/13-2.jpg)
 
 `apk`默认情况下没有`Comment`，所以`Comment length`的`short`两个字节为`0`，我们需要把这个值修改为我们的`Comment`长度，并把`Comment`追加到后面即可。
 
 ## 整体过程
-![](https://pic.superbed.cn/item/5da95814451253d1782a94a9.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/13-3.png)
 
 ## 服务端实现
 ### 实现下载接口
@@ -225,7 +225,7 @@ private static short bytes2Short(byte[] bytes, int offset) {
 最开始遇到的就是无法安装的问题，一开始以为是下载接口写的有问题，经过多次调试之后发现是修改完`comment`之后`apk`就无法安装了。
 
 查询[谷歌官方文档](https://developer.android.com/about/versions/nougat/android-7.0.html#apk_signature_v2)可知
-![](https://pic.superbed.cn/item/5da95814451253d1782a94b4.jpg)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/13-4.jpg)
 
 因此，只需要打包的时候签名方式只选择V1不选择V2就行。
 

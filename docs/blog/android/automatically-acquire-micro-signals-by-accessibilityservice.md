@@ -126,7 +126,7 @@ public class MyAccessibilityService extends AccessibilityService {
 ----
 ### 如何开启AccessibilityService呢？
 以小米手机为例，在设置中打开更多设置，进入无障碍。然后打开之前声明的服务即可。
-![](https://pic.superbed.cn/item/5da849e3451253d17803f80f.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/11-1.gif)
 
 ----
 ### 如何获取微信“我的”页面的微信号呢？
@@ -135,13 +135,13 @@ public class MyAccessibilityService extends AccessibilityService {
 那么问题来了，如何知道微信该控件的标识呢？这里可以通过`SDK`的工具`DDMS`工具。
 
 进入`SDK`目录的`tools`目录，找到`monitor.bat`文件，双击即可。
-![](https://pic.superbed.cn/item/5da849e3451253d17803f811.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/11-2.png)
 
 进入`DDMS`界面后，选中微信的包名，并点击如下所示按钮即可分析当前微信页面的布局信息：
-![](https://pic.superbed.cn/item/5da849e3451253d17803f813.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/11-3.png)
 
 如下图，可以发现该控件的标识为：`com.tencent.mm:id/czz`
-![](https://pic.superbed.cn/item/5da849e3451253d17803f815.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/11-4.png)
 
 因此，即可通过如下方法获取到该控件的值：
 ```java
@@ -163,7 +163,7 @@ public void onAccessibilityEvent(AccessibilityEvent event) {
 ```
 
 运行结果如下：
-![](https://pic.superbed.cn/item/5da849e3451253d17803f818.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/11-5.png)
 
 ## 总结
 + 在过程中遇到了两个问题：第一个问题是运行完了之后服务已经开启，但是一直不走回调，经查是由于没有写`accessibilityFeedbackType`参数的原因；

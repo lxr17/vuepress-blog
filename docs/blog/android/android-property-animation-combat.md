@@ -18,7 +18,7 @@
 
 ----
 ### 实现基本布局
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb69.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-1.png)
 
 上图的蓝色图片既是我们要处理的`View`。
 
@@ -45,7 +45,7 @@ rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
 ```
 
 效果图：  
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb6e.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-2.gif)
 
 ----
 ### 实现消失的动画
@@ -82,7 +82,7 @@ rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
 ```
 
 然而发现实际上动画是这样的：
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb75.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-3.gif)
 
 发现他是从最左边一直移动到了最右边，与我们的需求不符。
 
@@ -127,7 +127,7 @@ rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
 ```
 
 效果如下图：  
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb7a.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-4.gif)
 
 ----
 ### 实现出现的动画
@@ -152,7 +152,7 @@ case RecyclerView.SCROLL_STATE_IDLE:// 停止滚动
 ```
 
 效果图如下：  
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb7f.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-5.gif)
 
 但是发现如果频繁的滑动暂停的话动画会冲突，因此需要做一些判定，如果动画正在运行则不再重新开始动画。改动后的代码如下：
 ```java
@@ -234,7 +234,7 @@ case RecyclerView.SCROLL_STATE_SETTLING:// 飞翔中
 ```
 
 最终效果如图所示：
-![](https://pic.superbed.cn/item/5da969c9451253d1782dbb89.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/15-6.gif)
 
 ## 总结
 + 如果要实现其他的效果，例如淡入淡出等同理就可以实现；

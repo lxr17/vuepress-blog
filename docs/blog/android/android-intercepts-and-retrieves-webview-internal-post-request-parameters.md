@@ -29,7 +29,7 @@ webView.setWebViewClient(new WebViewClient() {
 后来参考了[request_data_webviewclient](https://github.com/KonstantinSchubert/request_data_webviewclient)，有了新的实现方式，具体原理为：<span style="color: #ff0000;">给H5注入一段js代码，目的是在每次Ajax请求都会调用Android原生的方法，将请求参数传给客户端。</span>
 
 具体流程如下：
-![](https://pic.superbed.cn/item/5da96441451253d1782d337f.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/14-1.jpg)
 
 其中，
 
@@ -112,7 +112,7 @@ private WebResourceResponse injectIntercept(WebResourceResponse response, Contex
 
 <span style="color: #ff0000;">注：根据</span>[谷歌官方文档](https://developer.android.com/reference/android/webkit/WebResourceResponse)<span style="color: #ff0000;">，mime必须为"text/html"。</span>
 
-![](https://pic.superbed.cn/item/5da96538451253d1782d4e99.jpg)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/14-2.jpg)
 
 ## 反思
 + 开发过程中遇到了页面一直显示不了的问题，实际上就是因为获取到的`mime`是`text/html; charset=utf-8`，得改成`text/html`；

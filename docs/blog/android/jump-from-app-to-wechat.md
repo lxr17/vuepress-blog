@@ -9,7 +9,7 @@
 
 ## 效果图
 
-![](https://pic.superbed.cn/item/5da9370b451253d178244f66.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/12-1.gif)
 
 ## 实现过程
 ### 跳转微信按钮点击事件
@@ -258,7 +258,7 @@ if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
 <span style="color: #ff0000;font-weight: bold">解决办法：</span>  
 对聊天界面单独做处理，根据聊天界面左上角UI存在不存在来确定是否为聊天界面。
   
-![](https://pic.superbed.cn/item/5da9370b451253d178244f6b.jpg)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/12-2.jpg)
 
 ```java
 if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED && !LAUNCHER_ACTIVITY_NAME.equals(event.getClassName().toString()) && !SEARCH_ACTIVITY_NAME.equals(event.getClassName().toString())) {
@@ -281,7 +281,7 @@ if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED && !LAU
 ###  7. 搜索不到结果时，发现他在搜索结果页面乱跳
 经排查，发现搜索结果页面中的搜索布局提示布局id和首页面的搜索按钮id一致，因此就执行了点击搜索按钮的方法。
 
-![](https://pic.superbed.cn/item/5da9370b451253d178244f70.jpg)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/12-3.jpg)
 
 <span style="color: #ff0000;font-weight: bold">解决办法：</span>  
 对于搜索按钮页面（主页面）也要进行单独判断，由于主页面一定有`ViewPage`布局，因此只要找到`ViewPage`那就证明是在主页面。

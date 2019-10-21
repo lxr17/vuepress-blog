@@ -626,9 +626,9 @@ protected void onDraw(Canvas canvas) {
 这样循环了十个雷之后雷以及数字就生成完毕。
 
 ## 效果图
-![](https://pic.superbed.cn/item/5da7df43451253d178e6a14e.png)
-![](https://pic.superbed.cn/item/5da7df43451253d178e6a150.png)
-![](https://pic.superbed.cn/item/5da7df43451253d178e6a152.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/1-1.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/1-2.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/1-3.png)
 
 以上就是通过自定义`View`的方式实现的一个简易版扫雷。
 

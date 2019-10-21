@@ -4,7 +4,7 @@
 这次准备讲述后台服务器的搭建以及前台访问到数据的过程。
 
 ## 成果
-![](https://pic.superbed.cn/item/5da81695451253d178ebde5f.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/4-1.gif)
 
 ## 准备
 1. 安装了`eclipse`
@@ -307,7 +307,8 @@ public class QueryNewsServlet extends HttpServlet {
 
 通过以上的方式，就完成了后台查询段子接口的开发，并且可通过`page`参数来获取第`page`页的信息，接口URL为：`http://localhost:8080/Imitating9GAG/QueryNewsServlet?page=2`
 
-接着，将项目在`Tomcat`下启动后台服务器就正式搭建完成了。
+接着，将项目在`Tomcat`下启动后台服务器就正式搭建完成了，通过该URL获取的数据见下图：  
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/4-2.png)
 
 ## 前台获取数据并展示
 ```java

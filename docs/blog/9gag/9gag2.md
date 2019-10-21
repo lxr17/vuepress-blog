@@ -4,8 +4,8 @@
 这次准备讲述用`python`爬虫以及将爬来的数据存到`MySQL`数据库的过程，爬的是煎蛋网的无聊图。
 
 ## 成果
-![](https://pic.superbed.cn/item/5da80f9a451253d178eb338f.png)
-![](https://pic.superbed.cn/item/5da80f9a451253d178eb3391.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/3-1.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/3-2.png)
 
 ## 准备
 1. 下载了`python3.7`并配置好了环境变量

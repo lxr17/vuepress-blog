@@ -8,7 +8,7 @@
 这次主要讲这次重构的主要内容。
 
 ## 数据库设计
-![](https://pic.superbed.cn/item/5da82153451253d178ed0647.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/6-1.png)
 一共设计了六张表，分别为：
 1. **段子表**，主要存放每一个段子的图片等信息
 2. **评论表**，主要存放评论信息，评论可以上传图片
@@ -18,14 +18,14 @@
 6. **段子标签关联表**，因为段子和标签是多对多的，因此需要多一张表存放关联关系
 
 ## 接口设计
-![](https://pic.superbed.cn/item/5da82153451253d178ed064d.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/6-2.png)
 
 橙色的为表，咖啡色为接口。
 
 目前设计了十四个接口，上图写明了各接口和相关的表之间的关系。
 
 ## 后台结构
-![](https://pic.superbed.cn/item/5da82153451253d178ed0650.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/6-3.png)
 
 `bean`包下为基本实体类；  
 `implement`包下为消息实体类的子类；  

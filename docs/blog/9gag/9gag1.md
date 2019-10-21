@@ -4,7 +4,7 @@
 准备开始学习`Android`应用程序的一个完整的设计过程。准备做一个仿9GAG的APP，前端界面设计+后台数据爬虫+后台接口设计，整个流程体验一遍。今天准备先把前端界面的框架给完成了。
 
 ## 成果图
-![](https://pic.superbed.cn/item/5da808f5451253d178ea8e34.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/2-1.gif)
 
 ## 布局代码
 ```xml
@@ -157,8 +157,8 @@
 
 ## 插一个知识点
 可以直接通过`Android Studio`来生成需要用到的图标，这里的图标我都是直接通过`Android Studio`生成的，生成步骤如下：
-![](https://pic.superbed.cn/item/5da808f5451253d178ea8e39.png)
-![](https://pic.superbed.cn/item/5da808f5451253d178ea8e3b.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/2-2.png)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/2-3.png)
 
 接下来说一下主页面的实现，是通过`TabLayout`+`ViewPage`的方式来实现的，先来看代码：
 ```xml

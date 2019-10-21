@@ -6,7 +6,7 @@
 主要是使用了`SwipeRefreshLayout`的布局方式，并在此基础上通过`RecyclerView`的特性增加了上拉加载的功能。
 
 ## 成果
-![](https://pic.superbed.cn/item/5da81b49451253d178ec54eb.gif)
+![](https://he_jhua.gitee.io/image-hosting/2019/10/21/5-1.gif)
 
 ## 实现方式
 ### 页面布局

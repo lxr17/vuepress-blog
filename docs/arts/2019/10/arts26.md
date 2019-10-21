@@ -54,7 +54,7 @@ private void sortRest(int[] nums, int index) {
 - [Android UI Testing Frameworks](https://proandroiddev.com/android-ui-testing-frameworks-b0b52187ceb)  
 
 ## Tip
-+ ![](./img/builder.png)
++ ![](https://he_jhua.gitee.io/image-hosting/2019/10/21/arts26-1.png)
   + `aapt`:打包资源文件，包括`res`和`assets`文件夹下的资源、`AndroidManifest.xml`文件、`Android`基础类库
   + `aidl`:将`.aidl`接口文件转换成`.java`文件
   + `Java Compiler`:编译`java`文件，生成`.class`字节码文件
