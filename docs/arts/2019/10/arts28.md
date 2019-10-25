@@ -10,6 +10,7 @@
 ## Review
 - [View Binding](https://developer.android.com/topic/libraries/view-binding)
 - [View Binding: Internals](https://blog.stylingandroid.com/view-binding-internals/)  
+- [Introducing Chucker](https://proandroiddev.com/introducing-chucker-18f13a51b35d)
 
 ## Tip
 + Java的一些规范
