@@ -69,4 +69,11 @@ module.exports = [
             './2019/10/arts28',
         ]
     },
+    {
+        title: '11月',
+
+        children: [
+            './2019/11/arts29',
+        ]
+    },
 ];
