@@ -86,9 +86,9 @@ private boolean contain(char[][] board, int x, int y) {
 ```
 
 ## Review
-- []()  
+- [AnimatedIcons: Strikethru](https://blog.stylingandroid.com/animatedicons-strikethru/)  
 
 ## Tip
-+ 
++ mipmap-anydpi-v26的用处：用来适配APP的启动图标；
 
 ## Share
