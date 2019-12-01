@@ -4,4 +4,4 @@ module.exports = [
 
         children: require("./2019/sidebar")
     },
-]
+];
