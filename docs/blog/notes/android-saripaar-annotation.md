@@ -61,15 +61,15 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@AssertFalse`
 
-##### 描述
+#### 描述
 用于判断输入内容是否为`false`。
 
-##### 作用范围
+#### 作用范围
 + `CheckBox`
 + `RadioButton`
 + `RadioGroup`
 
-##### 参数
+#### 参数
 + `sequence`：确定规则的判定顺序，当单个`View`有多个规则时生效
 + `messageResId`：错误提示文字的资源文件ID
 + `message`：错误提示文字  
@@ -79,10 +79,10 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@AssertTrue`
 
-##### 描述
+#### 描述
 用于判断输入内容是否为`true`。
 
-##### 作用范围
+#### 作用范围
 + `CheckBox`
 + `RadioButton`
 + `RadioGroup`
@@ -91,50 +91,50 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Checked`
 
-##### 描述
+#### 描述
 用于判断输入内容是否为预设值，默认预设值为`true`。
 
-##### 作用范围
+#### 作用范围
 + `CheckBox`
 + `RadioButton`
 + `RadioGroup`
 
-##### 参数
+#### 参数
 + `value`：用于设置预设值，默认为`true`
 
 ----
 
 ### `@ConfirmEmail`
 
-##### 描述
+#### 描述
 判断当前输入内容与被`@Email`注解的`View`的内容是否一致。
 **注：当前容器所持有的被`@Email`注解的`View`必须且只允许有一个。**
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
 ----
 
 ### `@ConfirmPassword`
 
-##### 描述
+#### 描述
 判断当前输入内容与被`@Password`注解的`View`的内容是否一致。
 **注：当前容器所持有的被`@Password`注解的`View`必须且只允许有一个。**
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
 ----
 
 ### `@CreditCard`
 
-##### 描述
+#### 描述
 判断输入内容是否符合信用卡卡号规则。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `cardTypes`：是一个数组，用于确定信用卡的类型，每种类型对应着不同的正则表达式
     + `Type.AMEX`，美国运通卡，对应着`^(3[47]\d{13})$`
     + `Type.DINERS`，大莱信用卡，对应着`^(30[0-5]\d{11}|3095\d{10}|36\d{12}|3[8-9]\d{12})$`
@@ -147,39 +147,39 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@DecimalMax`
 
-##### 描述
+#### 描述
 限制输入内容的最大值，输入内容会被强转为`Double`类型，若输入文字不符合`Double`类型，会报`ConversionException`异常。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `value`：`double`类型，最大值。
 
 ----
 
 ### `@DecimalMin`
 
-##### 描述
+#### 描述
 限制输入内容的最小值，输入内容会被强转为`Double`类型，若输入文字不符合`Double`类型，会报`ConversionException`异常。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `value`：`double`类型，最小值。
 
 ----
 
 ### `@Digits`
 
-##### 描述
+#### 描述
 判断输入内容是否为数字，可定义整数部分以及小数部分的最大位数。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `integer`：整数部分最大位数
 + `fraction`：小数部分最大位数  
 **注：输入内容需满足正则  
@@ -189,39 +189,39 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Domain`
 
-##### 描述
+#### 描述
 判断输入内容是否是一个有效的域名。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `allowLocal`：本地地址是否有效，默认为`false`
 
 ----
 
 ### `@Email`
 
-##### 描述
+#### 描述
 判断输入内容是否是一个有效的邮箱地址。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `allowLocal`：本地地址是否有效，默认为`false`
 
 ----
 
 ### `@Future`
 
-##### 描述
+#### 描述
 判断输入的时间是否是未来时间（与当前时间相比）。输入的时间必须满足相应的格式。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `dateFormat`：时间的格式，默认为`dd-MM-yyyy`，以下为`saripaar`提供的格式（可自定义）
     + `DateFormats.DMY`：`dd-MM-yyyy`
     + `DateFormats.YMD`：`yyyy-MM-dd`
@@ -238,33 +238,33 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@IpAddress`
 
-##### 描述
+#### 描述
 判断输入的内容是否是一个`IP`，`IPv4`或`IPv6`
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
 ----
 
 ### `@Isbn`
 
-##### 描述
+#### 描述
 判断输入的内容是否是一个`Isbn`，即[国际标准书号](https://zh.wikipedia.org/wiki/国际标准书号)。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
 ----
 
 ### `@Length`
 
-##### 描述
+#### 描述
 限制输入内容的文本长度，可自定义最大长度和最小长度。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `min`：文本的最小长度，默认为`Integer.MIN_VALUE`
 + `max`：文本的最大长度，默认为`Integer.MAX_VALUE`
 + `trim`：是否需要先做`trim`操作，默认为`false`
@@ -273,39 +273,39 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Max`
 
-##### 描述
+#### 描述
 限制输入内容的最大值，输入内容会被强转为`Integer`类型，若输入文字不符合`Integer`类型，会报`ConversionException`异常。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `value`：`int`类型，最大值。
 
 ----
 
 ### `@Min`
 
-##### 描述
+#### 描述
 限制输入内容的最小值，输入内容会被强转为`Integer`类型，若输入文字不符合`Integer`类型，会报`ConversionException`异常。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `value`：`int`类型，最小值。
 
 ----
 
 ### `@NotEmpty`
 
-##### 描述
+#### 描述
 判断输入内容是否非空。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `trim`：判断之前是否要先`trim`，默认为`false`
 + `emptyText`：设置“空字符串”，可自定义一段文本，当输入此文本是则为空
 + `emptyTextResId`：设置“空字符串”的资源文件
@@ -314,30 +314,30 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Order`
 
-##### 描述
+#### 描述
 确定校验字段的顺序。当一个容器有多个`View`需要检验时，可通过该注解确定校验顺序。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 + `CheckBox`
 + `RadioButton`
 + `RadioGroup`
 + `Spinner`
 
-##### 参数
+#### 参数
 + `value`：`int`类型，用于确定顺序
 
 ----
 
 ### `@Password`
 
-##### 描述
+#### 描述
 用于校验文本是否符合密码的规则。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `min`：最小字符数，默认为6
 + `scheme`：`Scheme`类型，利用正则确定密码的输入格式，只能为`Scheme`类型，不可自定义，默认为`Password.Scheme.ANY`
     + `Password.Scheme.ANY`：`.+`
@@ -353,13 +353,13 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Past`
 
-##### 描述
+#### 描述
 判断输入的时间是否是过去时间（与当前时间相比）。输入的时间必须满足相应的格式。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `dateFormat`：时间的格式，默认为`dd-MM-yyyy`，以下为`saripaar`提供的格式（可自定义）
     + `DateFormats.DMY`：`dd-MM-yyyy`
     + `DateFormats.YMD`：`yyyy-MM-dd`
@@ -376,13 +376,13 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Pattern`
 
-##### 描述
+#### 描述
 判断输入的内容是否满足正则表达式。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `regex`：正则表达式
 + `caseSensitive`：是否区分大小写
 
@@ -390,26 +390,26 @@ btn.setOnClickListener(new View.OnClickListener() {
 
 ### `@Select`
 
-##### 描述
+#### 描述
 判断选择的索引是否等于默认值，如果不等于则通过，默认值为0。
 
-##### 作用范围
+#### 作用范围
 + `Spinner`
 
-##### 参数
+#### 参数
 + `defaultSelection`：设置默认值
 
 ----
 
 ### `@Url`
 
-##### 描述
+#### 描述
 判断输入的内容是否是一个`url`。
 
-##### 作用范围
+#### 作用范围
 + `TextView`
 
-##### 参数
+#### 参数
 + `schemes`：是一个数组，`url`的协议数组，可自定义，默认为`{"http", "https", "ftp"}`
 + `allowFragments`：`url`片段是否允许通过，默认为`true`
 
