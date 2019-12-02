@@ -8,7 +8,8 @@ module.exports = [
 
                 children: [
                     './notes/basic-knowledge-java',
-                    './notes/study-notes-git'
+                    './notes/study-notes-git',
+                    './notes/android-saripaar-annotation',
                 ]
             },
             {
