@@ -357,3 +357,5 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response)
 
 ## 预告
 下一章准备讲述点赞的逻辑，因为点赞的逻辑比较复杂。
+
+<Vssue title="仿9GAG制作过程（五）" />

@@ -425,3 +425,5 @@ btn.setOnClickListener(new View.OnClickListener() {
 通过阅读源码对`saripaar`有了更深的认识，并对基于注解的框架有了一个完备的认知。
 
 以后如果有时间的话总结一下`Android Saripaar`实现的细节。
+
+<Vssue title="Android Saripaar 注解详解" /> 

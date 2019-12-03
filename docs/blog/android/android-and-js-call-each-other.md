@@ -109,3 +109,4 @@ webView.addJavascriptInterface(this, "justTest");
 
 这篇博客写了一个很简单的一个`demo`，但是安卓和`js`互相调用在实际开发中很有用，特地做一个总结。
 
+<Vssue title="Android与js互相调用" />

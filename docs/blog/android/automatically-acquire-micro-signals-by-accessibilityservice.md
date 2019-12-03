@@ -175,3 +175,5 @@ public void onAccessibilityEvent(AccessibilityEvent event) {
 ## 参考博客
 + [你真的理解AccessibilityService吗](https://www.jianshu.com/p/4cd8c109cdfb)
 + [[Android进阶]学习AccessibilityService实现微信抢红包插件](https://www.cnblogs.com/huolongluo/p/6120946.html)
+
+<Vssue title="利用无障碍服务自动获取微信号" />

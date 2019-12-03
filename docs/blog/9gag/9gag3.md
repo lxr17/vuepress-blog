@@ -373,3 +373,5 @@ private Handler handler = new Handler() {
 下一篇准备讲述官方自带的`SwipeRefreshLayout`刷新控件。
 
 由于该控件没有上拉加载功能，于是就在`RecyclerView`中实现了上拉加载功能。
+
+<Vssue title="仿9GAG制作过程（三）" />

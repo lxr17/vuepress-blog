@@ -92,3 +92,6 @@ private boolean contain(char[][] board, int x, int y) {
 + mipmap-anydpi-v26的用处：用来适配APP的启动图标；
 
 ## Share
+暂无内容
+
+<Vssue title="第三十周ARTS总结" />

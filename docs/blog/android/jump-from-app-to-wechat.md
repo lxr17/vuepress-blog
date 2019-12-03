@@ -364,4 +364,6 @@ if (editTextNode.size() > 0) {
 + 通过无障碍的方式来实现该功能效率低，并且不稳定，不知是否有更好的方法；
 + `Android`系统真的特别不安全！
 
-## GitHub地址：[JumpToWeChat](https://github.com/lxr17/JumpToWeChat) 
+## GitHub地址：[JumpToWeChat](https://github.com/lxr17/JumpToWeChat)
+
+<Vssue title="从APP跳转到微信指定联系人聊天页面功能的实现与采坑之旅" /> 

@@ -634,3 +634,5 @@ protected void onDraw(Canvas canvas) {
 
 第一次写博客，比较生疏。如有建议，欢迎评论~
 
+<Vssue title="利用自定义View实现扫雷游戏" /> 
+

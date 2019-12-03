@@ -27,3 +27,6 @@ public boolean isPalindrome(int x) {
 + 可以通过`WebStorage.getInstance().deleteAllData();`来删除`webview`中的所有`localStorage`存储
 
 ## Share
+暂无内容
+
+<Vssue title="第七周ARTS总结" />

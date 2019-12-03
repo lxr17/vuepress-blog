@@ -76,3 +76,6 @@ public int divide(int dividend, int divisor) {
 + `WeakReference`是弱引用，当一个对象仅仅被`weak reference`（弱引用）指向, 而没有任何其他`strong reference`（强引用）指向的时候, 如果这时`GC`运行, 那么这个对象就会被回收，不论当前的内存空间是否足够，这个对象都会被回收
   
 ## Share
+暂无内容
+
+<Vssue title="第二十四周ARTS总结" />

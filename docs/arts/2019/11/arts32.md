@@ -135,3 +135,6 @@ public String countAndSay(int n) {
     + `Lazy`：懒加载容器，只有调用`get()`的时候才会生成实例，并且实例只有一份
 
 ## Share
+暂无内容
+
+<Vssue title="第三十二周ARTS总结" />

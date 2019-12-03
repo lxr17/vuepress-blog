@@ -406,3 +406,4 @@ private void initLoadMoreListener() {
 
 接下来准备实现点赞功能以及`GIF`的暂停功能。
 
+<Vssue title="仿9GAG制作过程（四）" />
