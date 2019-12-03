@@ -14,7 +14,8 @@ module.exports = {
 
     // 自定义favicon
     head: [
-        ['link', {rel: 'icon', href: '/favicon.ico'}]
+        ['link', {rel: 'icon', href: '/favicon.ico'}],
+        ['meta', {name: 'google-site-verification', content: 'H_dV-heaDwkOiptgjG8PsPpn5oQaNGqVoO2i309k_og'}]
     ],
 
     // 设置ga
