@@ -20,5 +20,9 @@
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
     "vuepress": "^1.0.3"
+  },
+  "dependencies": {
+    "@vssue/api-github-v3": "^1.1.2",
+    "@vssue/vuepress-plugin-vssue": "^1.2.2"
   }
 }

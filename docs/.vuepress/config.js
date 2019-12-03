@@ -1,6 +1,9 @@
 module.exports = {
     base: '/',
 
+    // 语言
+    lang: 'zh-CN',
+
     // 标题
     title: '懒星人的主页',
 
@@ -24,7 +27,23 @@ module.exports = {
             ga: 'UA-146806630-1'
         }],
         ['@vuepress/back-to-top'],
-        ['@vuepress/medium-zoom']
+        ['@vuepress/medium-zoom'],
+        ['@vssue/vuepress-plugin-vssue', {// 评论功能
+            // 设置 `platform` 而不是 `api`
+            platform: 'github',
+
+            // 其他的 Vssue 配置
+            owner: 'lxr17',
+            repo: 'vuepress-blog',
+            clientId: '0da0e6be8c8536aefe51',
+            clientSecret: '87756d598597898ce181db26e677c32da8df0857',
+
+            // 语言
+            locale: 'zh',
+
+            // issue标题的前缀
+            prefix: '[评论]',
+        }]
     ],
 
     themeConfig: {
