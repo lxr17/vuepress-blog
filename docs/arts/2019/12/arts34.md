@@ -85,7 +85,7 @@ private List<List<Integer>> recursive(int[] candidates, int target, int startInd
         + `View(Context context)`：通过代码创建`View`会调用此构造方法
         + `View(Context context, @Nullable AttributeSet attrs)`：在xml创建但是没有指定style会调用此构造方法
     2. 添加自定义属性
-    3. 在构造方法中获取属性，并初始化画笔等**（注意`TypedArray`需及时回收）**
+    3. 在构造方法中获取属性，并初始化画笔等 **（注意`TypedArray`需及时回收）**
     4. 在`onMeasure(int widthMeasureSpec, int heightMeasureSpec)`中执行测量操作，主要计算控件占多大地方
         + `UNSPECIFIED`：任意大小，尽可能大
         + `EXACTLY`：一个确定的值，例如`100dp`、`match_parent`
