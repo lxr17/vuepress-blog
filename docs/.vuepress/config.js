@@ -72,14 +72,16 @@ module.exports = {
             {text: '博客', link: '/blog/'},
             {text: 'ARTS总结', link: '/arts/'},
             {text: '碎碎念', link: '/thought/'},
-            {text: '关于', link: '/about/about'}
+            {text: '年终总结', link: '/summary/'},
+            {text: '关于', link: '/about/about'},
         ],
 
         // 侧边栏
         sidebar: {
             '/blog/': require('../blog/sidebar'),
             '/arts/': require('../arts/sidebar'),
-            '/thought/': require('../thought/sidebar')
+            '/thought/': require('../thought/sidebar'),
+            '/summary/': require('../summary/sidebar'),
         }
     }
 }

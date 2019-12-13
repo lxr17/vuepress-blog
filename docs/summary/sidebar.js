@@ -1,11 +1,9 @@
 module.exports = [
     {
-        title: '碎碎念',
+        title: '年终总结',
 
         children: [
-            'excerpt1',
-            'the-future-belongs-to-bald',
-            'dont-settle-for-use-only-components',
+            '2019',
         ]
     }
 ];
