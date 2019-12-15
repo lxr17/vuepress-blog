@@ -37,7 +37,7 @@ public int firstMissingPositive(int[] nums) {
 ```
 
 ## Review
-- 
+- [Resolving View Attributes on Android](https://ataulm.github.io/2019/10/28/resolving-view-attributes.html)
 
 ## Tip
 + `Handler`机制：
@@ -70,6 +70,17 @@ public int firstMissingPositive(int[] nums) {
     + 默认情况下，系统会为每个应用分配一个唯一的`Linux`用户ID（该ID仅由系统使用，应用并不知晓）。系统会为应用中的所有文件设置权限，使得只有分配给该应用的用户ID才能访问这些文件;
     + 每个进程都拥有自己的虚拟机(VM)，因此应用代码独立于其他应用而运行;
     + 默认情况下，每个应用都在其自己的`Linux`进程内运行。`Android`系统会在需要执行任何应用组件时启动该进程，然后当不再需要该进程或系统必须为其他应用恢复内存时，其便会关闭该进程。
++ `ViewPage2`的优势
+    + 基于`RecyclerView`实现
+    + 支持滑动方向的一键切换
+    + 支持禁止用户滑动页面
+    + 支持通过代码方式模拟用户滚动页面
+    + 支持同时添加多个`PageTransformer`
+    + 支持`DiffUtil`
+    + 支持`RTL(right-to-left)`布局
++ `HashMap`的实现方式
+    + `jdk1.6 jdk1.7`：采用数组+链表实现
+    + `jdk1.8`：采用数组+链表+红黑树实现，当链表长度超过阈值时，自动转为红黑树
     
 ## Share
 暂无内容
