@@ -41,11 +41,11 @@ public void rotate(int[][] matrix) {
 ## Tip
 + `TERM environment variable not set.`解决：将`Emulate terminal in output console`打钩
 + `HashMap#put`方法判断**key**是否重复的依据是`hashCode`与`equals`，其中`hashCode`方法更优先
-+ **APP**启动分类 [[1](https://segmentfault.com/a/1190000020904556)]：
++ **APP**启动分类 [[1]](https://segmentfault.com/a/1190000020904556)：
     + 冷启动
     + 热启动
     + 温启动
-+ 冷启动流程 [[2](https://segmentfault.com/a/1190000020904556)]：
++ 冷启动流程 [[2]](https://segmentfault.com/a/1190000020904556)：
     1. 启动**APP**
     2. 加载空白`Window`
     3. 创建进程
@@ -55,7 +55,7 @@ public void rotate(int[][] matrix) {
     7. 加载布局
     8. 布置屏幕
     9. 首帧绘制
-+ `adb shell am start -W packagename/[packagename].首屏Activity`：用户获取该页面的耗时信息 [[[3](https://segmentfault.com/a/1190000020904556)]]
++ `adb shell am start -W packagename/[packagename].首屏Activity`：用户获取该页面的耗时信息 [[3]](https://segmentfault.com/a/1190000020904556)
     
 ## Share
 暂无内容
