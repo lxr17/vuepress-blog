@@ -74,7 +74,7 @@ private double pow(double x, int n) {
     + 底层原理不了解会有坑
     + 代码侵入性较大，影响升级
     + 影响封装性
-+ **Lombok**的好处：
++ **Lombok**的好处 [[5]](https://mp.weixin.qq.com/s/Un25nEu6xwIft9nSUU69Cg)：
     + 不需要手写**get()/set()**
     + 更优雅的生成对象：`Course course = Course.builder().id(123l).name("高等数学").score(100).build()`
     + 不需要手写全参/无参/部分参构造方法
