@@ -405,5 +405,3 @@ private void initLoadMoreListener() {
 本次学习了`Android`的下拉刷新以及上拉加载的实现，对`RecyclerView`有了进一步的了解。
 
 接下来准备实现点赞功能以及`GIF`的暂停功能。
-
-<Vssue title="仿9GAG制作过程（四）" />

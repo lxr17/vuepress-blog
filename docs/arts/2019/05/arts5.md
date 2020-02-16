@@ -26,5 +26,3 @@ public int reverse(int x) {
 
 ## Share
 暂无内容
-
-<Vssue title="第五周ARTS总结" />

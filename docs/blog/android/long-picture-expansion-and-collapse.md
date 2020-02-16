@@ -155,5 +155,3 @@ Glide.with(this)
 + `Glide`是一个庞然大物，也是一个很值得学习的框架，需要熟悉掌握（之后有时间阅读源码）
 
 <span style="font-size: 18pt; background-color: #333333; color: #ffffff;">Android的优势在于开源，开源的好处在于易于学习，容易更改。对于开源的框架，仅仅是掌握是不够的，还需要好好的了解框架设计的一些设计模式，框架的优缺点等。</span>
-
-<Vssue title="长图的展开与收起" /> 

@@ -164,7 +164,3 @@ public String saveImageToGallery(Bitmap bmp) {
 + 对于安卓基础的了解有待加强；
 + 总算明白了为什么`QQ`分享需要请求存储权限；
 + `BAT`现在是大家，对于他们的`API`需要熟悉了解。
-
-<Vssue title="微信分享大图遇到的问题" /> 
-
-

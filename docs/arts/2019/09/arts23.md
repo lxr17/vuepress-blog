@@ -37,5 +37,3 @@ public int strStr(String haystack, String needle) {
   
 ## Share
 暂无内容
-
-<Vssue title="第二十三周ARTS总结" />

@@ -84,5 +84,3 @@ applicationVariants.all { variant ->
   
 ## Share
 暂无内容
-
-<Vssue title="第二十五周ARTS总结" />

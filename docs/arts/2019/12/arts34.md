@@ -95,5 +95,3 @@ private List<List<Integer>> recursive(int[] candidates, int target, int startInd
 
 ## Share
 - [Android Saripaar 注解详解](https://www.cnblogs.com/lanxingren/p/11973882.html)
-
-<Vssue title="第三十四周ARTS总结" />

@@ -93,5 +93,3 @@ private boolean contain(char[][] board, int x, int y) {
 
 ## Share
 暂无内容
-
-<Vssue title="第三十周ARTS总结" />

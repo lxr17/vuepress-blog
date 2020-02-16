@@ -609,5 +609,3 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
 `ImageView`的`scaleType`的意思是图片如何填充，其中`fitCenter`为居中填充，`fitStart`为左对齐填充，`fitEnd`为右对齐填充。
 
 写的比较仓促，如有疑问或者错误的地方欢迎留言指正。
-
-<Vssue title="仿9GAG制作过程（一）" />

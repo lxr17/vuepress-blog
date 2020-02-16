@@ -40,5 +40,3 @@ public boolean isValid(String s) {
 
 ## Share
 - [Android 属性动画实战](https://www.cnblogs.com/lanxingren/p/11309747.html)
-
-<Vssue title="第十七周ARTS总结" />

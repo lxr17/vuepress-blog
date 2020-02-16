@@ -243,5 +243,3 @@ case RecyclerView.SCROLL_STATE_SETTLING:// 飞翔中
 + 本文的实现还是比较简陋，最好的效果是动画可以被打断，由于比较麻烦，所以没有实现。
 
 ## Github地址：[属性动画初战](https://github.com/lxr17/property_animation)
-
-<Vssue title="Android 属性动画实战" />

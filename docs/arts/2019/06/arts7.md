@@ -28,5 +28,3 @@ public boolean isPalindrome(int x) {
 
 ## Share
 暂无内容
-
-<Vssue title="第七周ARTS总结" />

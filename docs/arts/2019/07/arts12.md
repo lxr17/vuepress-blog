@@ -49,5 +49,3 @@ public String longestCommonPrefix(String[] strs) {
 
 ## Share
 暂无内容
-
-<Vssue title="第十二周ARTS总结" />
