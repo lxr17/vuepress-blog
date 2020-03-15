@@ -1,14 +1,41 @@
 # 第四十六周ARTS总结
 ## Algorithm
-- []()
-> 8ms | 9.39% Run time  
-> 40.5MB | 8.70% Memory
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+> 0ms | 100.00% Run time  
+> 41.8MB | 5.16% Memory
 ```java
+public int maxSubArray(int[] nums) {
+    // 思路
+    // 1. 记start为0
+    // 2. 从start开始遍历
+    // 3. 如果start到当前索引之间的数之和大于零，start不变，否则start等于当前的索引，继续遍历
 
+    int max = nums[0];
+
+    int sum = nums[0];
+
+    for (int i = 1; i < nums.length; i++) {
+        int temp = nums[i];
+
+        if (sum < 0) {
+            sum = temp;
+        } else if (sum + temp > 0) {
+            sum += temp;
+        } else {
+            sum = temp;
+        }
+
+        if (sum > max) {
+            max = sum;
+        }
+    }
+
+    return max;
+}
 ```
 
 ## Review
-- []()
+- [How to make Expandable RecyclerView using Kotlin](https://johncodeos.com/how-to-make-expandable-recyclerview-using-kotlin/)
 
 ## Tip
 + 给主活动指定的**label**不仅会成为标题栏中的内容，还会成为应用程序显示的名称
