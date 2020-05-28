@@ -27,4 +27,11 @@ module.exports = [
             './2020/03/arts47',
         ]
     },
+    {
+        title: '04月',
+
+        children: [
+            './2020/04/arts48',
+        ]
+    },
 ];
