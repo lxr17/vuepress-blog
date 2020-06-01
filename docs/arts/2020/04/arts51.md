@@ -79,8 +79,8 @@ public int[][] generateMatrix(int n) {
 + **UriMatcher**：可帮助在`ContentProvider`中匹配`Uri`
 + `ContentProvider`中的`getType`为**MIME**类型，分三部分：
     1. **vnd**开头
-    2. 如果**Uri**以路径结尾，则**android.cursor.dir/**；如果**Uri**路径以**id**结尾，则**android.cursor.item/**
-    3. **vnd.<authority>.<path>**
+    2. 如果**Uri**以路径结尾，则`android.cursor.dir/`；如果**Uri**路径以**id**结尾，则`android.cursor.item/`
+    3. `vnd.<authority>.<path>`
 
 ## Share
 暂无内容
