@@ -85,10 +85,14 @@ public ListNode rotateRight(ListNode head, int k) {
 ```
 
 ## Review
-- []()
+- [How To Use New Material Date Picker for Android](https://hackernoon.com/how-to-use-new-material-date-picker-for-android-s7k32w0)
 
 ## Tip
-+ 
++ 在**Android 8**及以上，需要创建渠道`NotificationChannel`才能显示通知
++ `NotificationCompat.Builder#setVibrate(new long[]{0, 1000, 1000, 1000})`的意思为：下标为偶数的代表禁止时间，下标为奇数的为震动时间（0是偶数）
++ 需要通知有震动功能的话，需要申请震动权限：`<uses-permission android:name="android.permission.VIBRATE" />`
++ 一般将比较大的数据存放在SD卡中应用关联缓存目录，即`/sdcard/Android/data/<package name>/cache/`下，用`getExternalCacheDir()`获取，**因为其他目录都需要申请危险权限**
++ **Android4.4**之后读写应用相关的目录不需要**WRITE_EXTERNAL_STORAGE**和**READ_EXTERNAL_STORAGE**权限
 
 ## Share
 暂无内容
