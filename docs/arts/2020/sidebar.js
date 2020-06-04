@@ -42,6 +42,8 @@ module.exports = [
 
         children: [
             './2020/05/arts52',
+            './2020/05/arts53',
+            // './2020/05/arts54',
         ]
     },
 ];
