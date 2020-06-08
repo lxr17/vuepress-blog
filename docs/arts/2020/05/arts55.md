@@ -134,10 +134,26 @@ public int[] plusOne(int[] digits) {
 ```
 
 ## Review
-- []()
+- [Creating Android animations with MotionLayout and MotionEditor](https://www.bignerdranch.com/blog/creating-android-animations-with-motionlayout-and-motioneditor/)
 
 ## Tip
-+ 
++ 必须在主线程更新**UI**的原因：**Android**的**UI**线程不安全
++ **Handler**机制：
+    + **Message**：线程之间传递的消息
+    + **Handler**：发送与处理消息
+    + **MessageQueue**：消息队列
+    + **Looper**：**MessageQueue**的管家
++ 每一个线程只会有一个`MessageQueue`和`Looper`
++ **runOnUiThread**本质上使用了**Handler**机制
++ **AsyncTask**的泛型参数：
+    + **Params**：在执行**AsyncTask**时传入的参数，可在后台任务中使用
+    + **Progress**：后台执行任务时，如需显示进度，则通过该泛型指定进度的单位
+    + **Result**：任务执行完毕返回结果的类型
++ **AsyncTask**常用方法：
+    + **onPreExecute**：**主线程**：该方法会在后台任务开始执行之前调用，用于进行一些界面初始化操作
+    + **doInBackground**：**子线程**：用于处理所有的耗时任务，如需反馈任务进度，可使用**publishProgress**来切换到主线程
+    + **onProgressUpdate**：**主线程**：当**publicProgress**调用后，该方法会被立即调用
+    + **onPostExecute**：**主线程**：后台任务完成后，**return**之后会调用该方法，可利用返回数据进行一些更新**UI**的操作
 
 ## Share
 暂无内容
