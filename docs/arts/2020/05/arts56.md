@@ -172,10 +172,20 @@ public int mySqrt(int x) {
 ```
 
 ## Review
-- []()
+- [Android 11: Developer Preview 2](https://android-developers.googleblog.com/2020/03/android-11-developer-preview-2.html)
 
 ## Tip
-+ 
++ 在服务内停止自生的方法：`stopSelf`
++ 服务于活动绑定的步骤：
+    1. 在服务内创建一个`Binder`对象
+    2. 在`onBind`方法中将该对象返回
+    3. 在活动中创建一个`ServiceConnection`对象，`ServiceConnection#onServiceConnected`方法参数中的`IBinder`即为**步骤1**中的`Binder`对象，可将此对象交给活动使用
+    4. 调用`bindService(bindIntent, serviceConnection, BIND_AUTO_CREATE);`来绑定服务
++ 前台服务与普通服务的一个最大区别是：**他会一直有一个正在运行的图标在系统状态栏显示**
++ 创建前台服务：只需要在`onCreate`中调用`startForeground`发送一条通知即可；注意：**在高版本上需要先创建渠道**
++ **IntentService**的好处：
+    + 解决忘记在服务中开启线程的问题
+    + 解决忘记停止服务的问题
 
 ## Share
 暂无内容
