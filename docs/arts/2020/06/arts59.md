@@ -1,0 +1,146 @@
+# 第五十九周ARTS总结
+## Algorithm
+- [Sort Colors](https://leetcode.com/problems/sort-colors/)
+> 0ms | 100.00% Run time  
+> 38MB | 57.51% Memory
+```java
+public void sortColors(int[] nums) {
+    // 最后一个0的索引
+    int oneIndex = -1;
+    // 第一个2的索引
+    int twoIndex = nums.length;
+    // 当前索引
+    int currentIndex = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+        // 所有的2不需要再次遍历
+        if (i >= twoIndex) {
+            break;
+        }
+
+        if (nums[i] == 2) {
+            // 第一个2的前一个元素与该元素作交换
+            nums[i] = nums[twoIndex - 1];
+            nums[twoIndex - 1] = 2;
+            twoIndex--;
+
+            // 由于被换上来的数字有可能还需要作交换，所以得重新比较一次
+            i--;
+        } else if (nums[i] == 0) {
+            // 最后一个0的后一个元素与该元素作交换
+            nums[i] = nums[oneIndex + 1];
+            nums[oneIndex + 1] = 0;
+            oneIndex++;
+
+            // 这里不需要i--了，因为被换上来的数字只可能为1（只有在oneIndex+1==i的时候才为0）
+        }
+    }
+}
+```
+----
+
+- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+> 101ms | 7.41% Run time  
+> 39.9MB | 65.16% Memory
+```java
+/**
+ * 参考了官方答案
+ */
+public String minWindow3(String s, String t) {
+    Map<Character, Integer> ori = new HashMap<Character, Integer>();
+    Map<Character, Integer> cnt = new HashMap<Character, Integer>();
+
+    int tLen = t.length();
+    for (int i = 0; i < tLen; i++) {
+        char c = t.charAt(i);
+        ori.put(c, ori.getOrDefault(c, 0) + 1);
+    }
+    int l = 0, r = -1;
+    int len = Integer.MAX_VALUE, ansL = -1, ansR = -1;
+    int sLen = s.length();
+    while (r < sLen) {
+        ++r;
+        if (r < sLen && ori.containsKey(s.charAt(r))) {
+            cnt.put(s.charAt(r), cnt.getOrDefault(s.charAt(r), 0) + 1);
+        }
+        while (check(ori, cnt) && l <= r) {
+            if (r - l + 1 < len) {
+                len = r - l + 1;
+                ansL = l;
+                ansR = l + len;
+            }
+            if (ori.containsKey(s.charAt(l))) {
+                cnt.put(s.charAt(l), cnt.getOrDefault(s.charAt(l), 0) - 1);
+            }
+            ++l;
+        }
+    }
+    return ansL == -1 ? "" : s.substring(ansL, ansR);
+}
+
+private boolean check(Map<Character, Integer> ori, Map<Character, Integer> cnt) {
+    Iterator iter = ori.entrySet().iterator();
+    while (iter.hasNext()) {
+        Map.Entry entry = (Map.Entry) iter.next();
+        Character key = (Character) entry.getKey();
+        Integer val = (Integer) entry.getValue();
+        if (cnt.getOrDefault(key, 0) < val) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+----
+
+- [Combinations](https://leetcode.com/problems/combinations/)
+> 5ms | 84.37% Run time  
+> 41.3MB | 26.57% Memory
+```java
+public List<List<Integer>> combine(int n, int k) {
+    List<List<Integer>> ans = new ArrayList<>();
+
+    // 首先约定每一种可能都是后一个数比前一个数大
+    // 然后一个数一个数的塞就行
+    // 首先塞第一个数
+    for (int i = 1; i <= n - k + 1; i++) {
+        List<Integer> item = new ArrayList<>();
+        item.add(i);
+
+        ans.add(item);
+    }
+
+    // 然后塞其余的数
+    for (int i = 2; i <= k; i++) {
+        // 中间变量
+        List<List<Integer>> temp = new ArrayList<>();
+
+        // 取第i个数
+        for (List<Integer> item : ans) {
+            int lastNum = item.get(item.size() - 1);
+
+            // 这里j的范围很重要
+            for (int j = lastNum + 1; j <= n - k + i; j++) {
+                List<Integer> tempItem = new ArrayList<>(item);
+                tempItem.add(j);
+
+                temp.add(tempItem);
+            }
+        }
+
+        ans.clear();
+        ans.addAll(temp);
+    }
+
+    return ans;
+}
+```
+
+## Review
+- []()
+
+## Tip
++ 
+
+## Share
+暂无内容

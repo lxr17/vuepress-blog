@@ -243,10 +243,19 @@ private int[] calculatorIndex(int num, int column) {
 ```
 
 ## Review
-- []()
+- [D8 Optimization: Assertions](https://jakewharton.com/d8-optimization-assertions/)
 
 ## Tip
-+ 
++ 通过`actionBar.setDisplayHomeAsUpEnabled(true);`可以将`ToolBar`中最左边的按钮显示出来，默认图标为左箭头，并且该按钮的点击事件可以在`onOptionsItemSelected`中实现，其**id**为**android.R.id.home**
++ `DrawerLayout`中的**菜单**必须通过`layout_gravity`指定其出来的方向，否则无效
++ `CoordinatorLayout`是一个加强版`FrameLayout`，他可以监听子控件的所有事件，自动的作出合理的反应
++ `CollapsingToolbarLayout`只能是`AppBarLayout`的直接子布局，而`AppBarLayout`只能是`CoordinatorLayout`的直接子布局
++ `AlarmManager`中一些**type**的意义：
+    + **ELAPSED_REALTIME**：定时任务的触发时机从系统开机开始算起，不唤起**CPU**
+    + **ELAPSED_REALTIME_WAKEUP**：定时任务的触发时机从系统开机开始算起，唤起**CPU**
+    + **RTC**：定时任务的触发时机从**1970.1.1**开始算起，不唤起**CPU**
+    + **RTC_WAKEUP**：定时任务的触发时机从**1970.1.1**开始算起，唤起**CPU**
++ **Doze**模式：在**Android6**及以上的系统中，如果该设备未插电源，并且屏幕关闭了一段时间，就会进入**Doze**模式，系统会对**CPU**、网络、**Alarm**等活动进行限制，从而延长电池寿命
 
 ## Share
 暂无内容
