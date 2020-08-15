@@ -112,7 +112,11 @@ public List<List<Integer>> subsets(int[] nums) {
 + **编译**与**解释**的区别
     + **编译**：将源程序整段的翻译成源程序，然后执行
     + **解释**：将高级语言编写的源程序翻译成机器指令，翻译一条执行一条
-
++ **Lifecycle**的使用：
+    1. 定义一个类，并实现`LifecycleObserver`接口
+    2. 在该类中定义生命周期相关的方法，并用注解`@OnLifecycleEvent(Lifecycle.Event.XXX)`来确定运行在哪个生命周期
+    3. 在活动中注册该类（观察者）：`getLifecycle().addObserver(new ALifecycleObserver());`
++ 可通过继承`ReplacementSpan`的方式来自定义`SpannableStringBuilder`的`span`
 
 ## Share
 暂无内容
