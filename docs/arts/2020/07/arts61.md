@@ -171,10 +171,21 @@ public int removeDuplicates(int[] nums) {
 ```
 
 ## Review
-- []()
+- [20 Books Java Developers Should Read in 2020](https://medium.com/javarevisited/10-books-java-developers-should-read-in-2020-e6222f25cc72)
 
 ## Tip
-+ 
++ `TextView`绘制相关：
+    + `baseline`：基准点，字符在`TextView`中的基准点，字符的绘制就是通过这个基准点来绘制的，相当于字符的零点，**top**，**bottom**，**ascent**，**descent**的值就是以这个为零点来得到的，在**baseline**上面的**top**和**ascent**是负数，在**baseline**下面的**bottom**和**descent**是正数
+    + `top`：指的是最高字符到**baseline**的值，即**ascent**的最大值（绝对值最大），为负数
+    + `ascent`：是**baseline**之上至字符最高处的距离，为负数
+    + `bottom`：是指最低字符到**baseline**的值，即**descent**的最大值（绝对值最大），为正数
+    + `descent`：是**baseline**之下至字符最低处的距离，为正数
++ 可通过`getPaint().getFontMetricsInt()`来获取`TextView`的基准值等信息
++ 同一个布局内`<include>`了两个相同的**layout**怎么分别获取**layout**下的子控件：
+    1. 通过`<include>`标签的**id**分别获取两个父**View**
+    2. 通过父**View**的`findViewById()`获取相应的子控件
++ `tools:replace`是用来解决清单文件合并过程中的冲突问题的，可通过`,`来分隔，例：`tools:replace="android:theme,android:exported"`
++ 二进制正数负数互转的方法：**先反码，再加一**
 
 ## Share
 暂无内容
