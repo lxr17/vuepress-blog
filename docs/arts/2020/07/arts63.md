@@ -92,6 +92,7 @@ public ListNode deleteDuplicates(ListNode head) {
 + 方法栈主要用来存放参数、返回地址、局部变量等
 + 多态和动态绑定的的意义：**创建对象的代码和操作对象的代码往往不在同一个地方**，操作对象的代码往往只知道对象的某种父类，也往往只需要知道他是某种类型的父类就可以了
 + 所有的子类都必须在构造方法中通过某种方式调用父类的构造方法，否则会编译错误
++ `Thread`通过`UncaughtExceptionHandler`对象来处理未捕获异常的情况：`finally {Process.killProcess(Process.myPid());System.exit(10);}`
 
 ## Share
 暂无内容
