@@ -57,7 +57,10 @@ public static class ListNode {
 - [What's Up With Floating Point?](https://timroderick.com/floating-point-introduction/)
 
 ## Tip
-+ 
++ 上采样（即放大图片）：
+    + 邻插值算法
+    + 双线性差值法
+    + 双三次差值法
 
 ## Share
 暂无内容
