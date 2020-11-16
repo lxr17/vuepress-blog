@@ -72,7 +72,8 @@ module.exports = [
         title: '08月',
 
         children: [
-            // './2020/08/arts65',
+            './2020/08/arts65',
+            // './2020/08/arts66',
         ]
     },
 ];
