@@ -1,10 +1,43 @@
 # 第六十六周ARTS总结
 ## Algorithm
-- []()
-> 3ms | 39.99% Run time  
-> 39.6MB | 54.66% Memory
+- [Scramble String](https://leetcode.com/problems/scramble-string/)
+> 72ms | 5.49% Run time  
+> 40.1MB | 17.91% Memory
 ```java
+public boolean isScramble2(String s1, String s2) {
+    if (s1.length() != s2.length()) return false;
+    return solve(s1, s2);
+}
 
+Map<String, Boolean> map = new HashMap<>();
+
+private boolean solve(String a, String b) {
+    int n = a.length();
+    if (a.equals(b)) return true;
+
+    String key = a + " " + b;
+    if (map.containsKey(key)) {
+        return map.get(key);
+    }
+
+    boolean flag = false;
+
+    for (int i = 1; i <= n - 1; i++) {
+        boolean noswap = solve(a.substring(0, i), b.substring(0, i)) &&
+                solve(a.substring(i), b.substring(i));
+
+        boolean swap = solve(a.substring(0, i), b.substring(n - i)) &&
+                solve(a.substring(i), b.substring(0, n - i));
+
+        if (swap || noswap) {
+            flag = true;
+            break;
+        }
+    }
+
+    map.put(key, flag);
+    return flag;
+}
 ```
 
 ## Review
