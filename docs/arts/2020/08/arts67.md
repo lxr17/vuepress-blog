@@ -65,6 +65,7 @@ BitmapFactory.decodeFile(filePath, options);
 String mimeType = options.outMimeType;
 LogUtils.d(TAG, "图片类型1：" + mimeType);
 ```
++ 可利用`layout_constraintWidth_max`和`layout_constraintWidth_percent`对控件做最大宽度限制（百分比）
 
 ## Share
 暂无内容
