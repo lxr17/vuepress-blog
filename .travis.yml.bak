@@ -1,3 +1,5 @@
+# 该文件已弃用，因为Travis部署有问题
+
 language: node_js
 node_js:
   - "lts/*"
