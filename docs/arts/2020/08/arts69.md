@@ -43,6 +43,12 @@ public List<List<Integer>> subsetsWithDup(int[] nums) {
     + **pickFirst**：匹配到多个相同文件，只提取第一个
     + **doNotStrip**：设置某些动态库不被优化压缩
     + **merge**：将匹配的文件都添加到**APK**中，和**pickFirst**有些相反，会合并所有文件
++ `taskAffinity`一二三：
+    + `taskAffinity`必须至少包含一个`.`
+    + `allowTaskReparenting`允许`Activity`更换当前所在的活动栈
++ **kotlin**的伴生函数
+  + 在**kotlin**的伴生函数里，方法使用`@JvmStatic`修饰的话在**Java**里就可以直接`KotlinClass.doWork();`调用，否则只能`KotlinClass.Companion.doWork();`调用
+  + 变量需要使用`@JvmField`修饰
 
 ## Share
 暂无内容
