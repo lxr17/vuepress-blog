@@ -35,7 +35,7 @@ public List<List<Integer>> subsetsWithDup(int[] nums) {
 ```
 
 ## Review
-- []()
+- [The dangers of JSON + default values](https://blog.danlew.net/2021/06/23/json-deserializatio-nand-default-values-dont-mix/)
 
 ## Tip
 + **packagingOptions**：
@@ -49,6 +49,8 @@ public List<List<Integer>> subsetsWithDup(int[] nums) {
 + **kotlin**的伴生函数
   + 在**kotlin**的伴生函数里，方法使用`@JvmStatic`修饰的话在**Java**里就可以直接`KotlinClass.doWork();`调用，否则只能`KotlinClass.Companion.doWork();`调用
   + 变量需要使用`@JvmField`修饰
++ **Android Studio**默认运行时增量编译，生成的文件不会到**APK**中
++ **视图动画**的旋转只有**X轴**和**Y轴**，没有**Z轴**，因此只能旋转，无法翻转
 
 ## Share
 暂无内容
