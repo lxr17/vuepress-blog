@@ -140,9 +140,58 @@ public static class ListNode {
 ```
 
 ## Review
-- []()
+- [Android 12 review for developers](https://proandroiddev.com/review-of-android-12-for-developers-ea3ce9247e0)
 
 ## Tip
++ 获取`ViewModel`的方法：
+    1. `viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)`
+    2. `viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MainViewModel::class.java)`
+    3. `private val mainViewModel by viewModels<MainViewModel>()`
++ **kotlin**集合函数：
+    + distinct
+    + joinToString
+    + reduce
+    + all
+    + find
+    + chunked
+    + copyInto
+    + toIntArray
+    + associateBy
+    + union
+    + intersect
+    + retainAll
+    + removeAll
+    + filter
+    + zip
+    + unzip
+    + partition
+    + reversed
+    + groupBy
+    + sorted
++ 垃圾回收
+    1. 判断哪些垃圾需要回收
+        + 引用计数算法
+        + 可达性分析算法
+    2. 垃圾回收算法
+        + 标记-清除法
+        + 标记-整理法
+        + 标记-复制法
++ `MeasureSpec`的三种模式（**MeasureSpec**是由父**View**的**MeasureSpec**和子**View**的**LayoutParams**简单计算出的针对子**View**的测量要求）
+    1. **UPSPECIFIED**：父容器对于子容器没有任何限制，子容器想要多大就多大
+    2. **EXACTLY**：父容器已经为子容器设置了尺寸，子容器应当服从这些边界，不论子容器想要多大的空间
+    3. **AT_MOST**：子容器可以是声明大小内的任意大小
++ `setMeasuredDimension()`可以简单理解就是给`mMeasuredWidth`和`mMeasuredHeight`设值
++ **View**绘制流程
+    1. `onMeasure`：确定了`mMeasuredWidth`和`mMeasuredHeight`
+    2. `onLayout`：确定了`mLeft`、`mTop`、`mRight`和`mBottom`
+    3. `draw`
+        1. `drawBackground`：绘制背景
+        2. 可跳过   
+        3. `onDraw`：绘制内容
+        4. `dispatchDraw`：对子**View**进行绘制
+        5. 可跳过   
+        6. `onDrawForeground`：绘制前景和滚动条
+        7. `drawDefaultFocusHighlight`：绘制默认的焦点突出显示
 
 ## Share
 暂无内容
