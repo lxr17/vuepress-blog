@@ -33,6 +33,8 @@ public int largestRectangleArea(int[] heights) {
 }
 ```
 
+----
+
 - [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
 > 13ms | 33.89% Run time  
 > 41.6MB | 99.08% Memory

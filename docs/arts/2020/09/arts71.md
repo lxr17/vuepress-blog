@@ -138,7 +138,24 @@ private void findPart(String s, int startIndex, int end, List<int[]> part) {
 - []()
 
 ## Tip
-+ 
++ **ndk**的选择
+    + 国内：**armeabi-v7a**
+    + 国外：**armeabi-v7a, arm64-v8a**
+    + DEBUG：**x86, armeabi-v7a, arm64-v8a**（**x86**主要用于**Windows**上的模拟器）
++ 线程池的生命周期
+  + **RUNNING**
+  + **SHUTDOWN**
+  + **STOP**
+  + **TIDYING**
+  + **TERMINATED**
++ **ThreadPoolExecutor**中的参数
+  + **corePoolSize**：线程池的核心线程数
+  + **workQueue**：任务队列
+  + **maximumPoolSize**：线程池支持的最大线程数
+  + **keepAliveTime**：非核心线程空闲时的存活时间
+  + **unit**：存活时间的单位
+  + **threadFactory**：创建线程的工厂
+  + **handler**：拒绝策略
 
 ## Share
 暂无内容

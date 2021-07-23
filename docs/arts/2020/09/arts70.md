@@ -74,6 +74,8 @@ public int numDecodings2(String s) {
 }
 ```
 
+----
+
 - [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
 > 0ms | 100.00% Run time  
 > 36.6MB | 65.91% Memory
