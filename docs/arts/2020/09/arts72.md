@@ -89,7 +89,9 @@ public class TreeNode {
 - []()
 
 ## Tip
-+ 
++ 如果某个`View`的`fitsSystemWindows`设为`true`，那么该`View`的`padding`属性将由系统设置，用户在布局文件中设置的`padding`会被忽略。系统会为该`View`设置一个`paddingTop`，值为`statusbar`的高度
++ 可通过`setOnApplyWindowInsetsListener`来对`fitsSystemWindows`个性化
++ **SNAPSHOT**的用途：假如**A模块**依赖了**SNAPSHOT**的B模块，则每次编译的时候都会去找最新的版本
 
 ## Share
 暂无内容
