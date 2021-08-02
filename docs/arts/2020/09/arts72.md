@@ -129,6 +129,9 @@ public class TreeNode {
             + 图的全源最短路径问题
             + 最长公共子序列
     + 枚举算法
++ 卡顿监控
+    + `Looper.getMainLooper().setMessageLogging(printer)`
+    + **Gradle Plugin** + **ASM**
 
 ## Share
 暂无内容
