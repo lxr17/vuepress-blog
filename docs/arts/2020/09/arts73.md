@@ -130,7 +130,7 @@ public int numTrees(int n) {
 ```
 
 ## Review
-- []()
+- [Safe delay in Android Views: goodbye Handlers, Hello Coroutines!](https://juliensalvi.medium.com/safe-delay-in-android-views-goodbye-handlers-hello-coroutines-cd47f53f0fbf)
 
 ## Tip
 + **Linux**进程间通信方式
@@ -165,6 +165,15 @@ public int numTrees(int n) {
     + 指标：给**Looper**设置**mLogging**，检测每一个事件的处理时间
   + 内存优化
     + 指标：利用**AndroidStudio**的**Profiler**工具
++ **Linux**进程切换流程
+  + 每**10ms**一次的定时器
+  + 触发定时器会给**CPU**一个中断信号
+  + 中断信号会使**CPU**寻找中断向量表，最终找到并执行**do_timer**
+  + **do_timer**会将当前进程的**counter**减一，如果仍大于0则结束
+  + 等于0时开始调度
+  + 找到所有**RUNNABLE**进程，并找到**counter**最大的那个进程（**counter**都为0则重新赋值）
+  + 通过**switch_to**函数切换进程
+  + 进行下一次**滴答**
 
 ## Share
 暂无内容
