@@ -110,7 +110,17 @@ public void recoverTree(TreeNode root) {
 - []()
 
 ## Tip
-+ 
++ **Fragment**的状态
+  + **INITIALIZED**
+  + **CREATED**
+  + **STARTED**
+  + **RESUMED**
+  + **DESTROYED**
++ **Activity**、**Window**、**DecorView**之间的关系
+  1. **Activity**持有了**PhoneWindow**
+  2. **PhoneWindow**创建了**DecorView**
+  3. **PhoneWindow**根据不同的主题，找到对应的布局，并把布局**add**进**DecorView**
+  4. **PhoneWindow**找到**DecorView**中**id**叫**content**的控件，并把我们写的布局**add**进去
 
 ## Share
 暂无内容

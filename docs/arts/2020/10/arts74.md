@@ -55,7 +55,31 @@ public boolean isInterleave(String s1, String s2, String s3) {
 - []()
 
 ## Tip
-+ 
++ `AppCompatActivity`最终根据**xml**创建`View`实际上是通过`AppCompatDelegateImpl#createView`
++ `FragmentManager`的获取方式
+  + 对于`Activity`来说，应该用`getFragmentManager`来获取（已弃用）
+  + 对于`AppCompatActivity`来说，应该用`getSupportFragmentManager`来获取
+  + 对于`Fragment`来说，通过`getParentFragmentManager`获取的是外部的`FragmentManager`，而通过`getChildFragmentManager`获取的才是自己的`FragmentManager`
++ 一些常用的`Android KTX`
+  + Core KTX
+  + Collection KTX
+  + Fragment KTX
+  + Lifecycle KTX
+  + LiveData KTX
+  + Navigation KTX
+  + Palette KTX
+  + Reactive Streams KTX
+  + Room KTX
+  + SQLite KTX
+  + ViewModel KTX
+  + WorkManager KTX
++ `FragmentTransaction#commit`会把当前的操作发送给主线程执行，是异步的
++ `FragmentTransaction#commitNow`会把当前的操作立即执行，是同步的
++ `setCustomAnimations`参数意义（假如从**A**页面跳转到**B**页面）
+  + **enter**：**B**页面进入的动画
+  + **exit**：当**B**页面进入时，**A**页面退出的动画
+  + **popEnter**：点击返回时，**A**页面进入的动画
+  + **popExit**：点击返回时，**B**页面的退出动画
 
 ## Share
 暂无内容
