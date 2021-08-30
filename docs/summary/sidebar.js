@@ -4,6 +4,7 @@ module.exports = [
 
         children: [
             '2019',
+            '2020',
         ]
     }
 ];
