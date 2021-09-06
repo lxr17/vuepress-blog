@@ -52,7 +52,7 @@ public boolean isInterleave(String s1, String s2, String s3) {
 ```
 
 ## Review
-- []()
+- [Safe delay in Android Views: goodbye Handlers, Hello Coroutines!](https://juliensalvi.medium.com/safe-delay-in-android-views-goodbye-handlers-hello-coroutines-cd47f53f0fbf)
 
 ## Tip
 + `AppCompatActivity`最终根据**xml**创建`View`实际上是通过`AppCompatDelegateImpl#createView`
