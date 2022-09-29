@@ -110,10 +110,14 @@ public List<List<Integer>> levelOrder(TreeNode root) {
 ```
 
 ## Review
-- []()
+- [How to prevent hackers from reverse engineering your Android apps](https://medium.com/proandroiddev/how-to-prevent-hackers-from-reverse-engineering-your-android-apps-2981661ab1c2)
 
 ## Tip
-+ 
++ 使用`WakeLock`加上**前台服务**能够有效地防止APP被杀死
++ 系统自带控件`AdapterViewFlipper`可以实现广告轮播效果
++ **dp值**可以理解为物理距离
++ 可以通过实现`RecyclerView#setItemAnimator`方法，并设置`canReuseUpdatedViewHolder`返回值为`true`来解决`notifyItemChanged`会导致布局跳动的问题（本质原因是**RecyclerView**为了做动画对同一个**item**的更改会创建两个**ViewHolder**）
++ 可通过`Magnifier`实现放大镜效果
 
 ## Share
 暂无内容
