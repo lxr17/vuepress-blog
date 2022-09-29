@@ -122,10 +122,14 @@ public boolean isSameTree2(TreeNode p, TreeNode q) {
 ```
 
 ## Review
-- []()
+- [6 Design Patterns Every Android Developer Must Know](https://medium.com/@ahmadkazimi/6-design-patterns-every-android-developer-must-know-53d912b5864b)
 
 ## Tip
-+ 
++ `RecycleView`可使用`overScrollMode`属性来去掉自带的过度滑动阴影
++ `ProgressBar`可自定义样式可使用**scale**来让进度条的左右都是圆角
++ 可以使用`<Space>`代替`margin`，因为前者不会执行任何绘制操作，而后者会重新绘制
++ 设置`TextView#setFilters`可以控制输入内容的长度或者监听输入内容做一些操作
++ `runCatching`非常适合用来处理一些可能会报错的表达式
 
 ## Share
 暂无内容
