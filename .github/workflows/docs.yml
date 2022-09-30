@@ -13,5 +13,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.SECRET_TOKEN }}
           TARGET_REPO: lxr17/vuepress-blog
           TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: docs:build
+          BUILD_SCRIPT: yarn && docs:build
           BUILD_DIR: docs/.vuepress/dist/
