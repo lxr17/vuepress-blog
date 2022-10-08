@@ -109,13 +109,19 @@ public int maxDepth(TreeNode root) {
 ```
 
 ## Review
-- []()
+- [NEW Logcat in Android Studio Dolphin is Amazing! 🔥](https://medium.com/@stevdza-san/new-logcat-in-android-studio-dolphin-is-amazing-cce5ffecb07b)
 
 ## Tip
 + 可通过`ProcessLifecycleOwner`来监听整个**APP**的生命周期，回到前台、退到后台等
 + 可通过设置**window**的**type**来让弹窗在其他**APP**上层
 + `context.startActivity`中的`context`如果不是`Activity`，需要添加`addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)`
-+ 
++ `filterIsInstance`可以根据类型来过滤集合
++ **kotlin**的难点
+  + 不变性思维
+  + 空安全思维
+  + 表达式思维
+  + 函数思维
+  + 协程思维
 
 ## Share
 暂无内容
