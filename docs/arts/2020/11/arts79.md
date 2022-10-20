@@ -177,16 +177,16 @@ public static class TreeHelper {
 ## Review
 - [Top 10 Android Libraries to boost your development in 2022](https://medium.com/localazy/top-10-android-libraries-to-boost-your-development-in-2022-3ec37fce8c22)
 >note:
-1. Retrofit
-2. Glide
-3. MPAndroidChart
-4. Room
-5. Android KTX
-6. Lottie
-7. Android FastScroll
-8. Broccoli
-9. Volley
-10. Firebase
+>1. Retrofit
+>2. Glide
+>3. MPAndroidChart
+>4. Room
+>5. Android KTX
+>6. Lottie
+>7. Android FastScroll
+>8. Broccoli
+>9. Volley
+>10. Firebase
 
 ## Tip
 + 图片占用内存的大小和图片本身大小无关，和**分辨率**、**所在目录（xhdpi等）**、**手机density**、设置的**inSampleSize**等有关
