@@ -175,10 +175,34 @@ public static class TreeHelper {
 }
 ```
 ## Review
-- []()
+- [Top 10 Android Libraries to boost your development in 2022](https://medium.com/localazy/top-10-android-libraries-to-boost-your-development-in-2022-3ec37fce8c22)
+>note:
+1. Retrofit
+2. Glide
+3. MPAndroidChart
+4. Room
+5. Android KTX
+6. Lottie
+7. Android FastScroll
+8. Broccoli
+9. Volley
+10. Firebase
 
 ## Tip
-+ 
++ 图片占用内存的大小和图片本身大小无关，和**分辨率**、**所在目录（xhdpi等）**、**手机density**、设置的**inSampleSize**等有关
++ 获取系统为**Bitmap**存储像素所分配的内存大小
+  + `getByteCount`
+  + `getAllocationByteCount`
++ `BitmapFactory.Options`的一些属性：
+  + `inDensity`：**Bitmap**本身的**density**，一般与所在密度目录有关（xhdpi、xxhdpi等）
+  + `inTargetDensity`：**Bitmap**将要展示所在地的**density**，通常指手机本身**density**
++ 浮点数加**0.5**然后强转为整数=浮点数四舍五入
++ 想办法减少**Bitmap**内存占用
+  + **jpg**和**png**：并没有什么用，他们只是两种不同的压缩图片的方式，只会让存储大小不一样
+  + 使用**inSampleSize**
+  + 使用**Matrix**
+  + 合理选择**Bitmap**的像素格式
+  + 索引位图（不常用，黑科技）：通过`options.inPreferredConfig = Config.RGB_565`来让他使用`kIndex8_Config`
 
 ## Share
 暂无内容
